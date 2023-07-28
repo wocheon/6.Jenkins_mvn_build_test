@@ -10,7 +10,7 @@
 <table border="0">
 <tr>
 <td>
-<img src="images/tomcat.gif">
+<img src="./images/tomcat.gif">
 </td>
 <td>
 <h1>Sample "Hello, World" Application</h1>
