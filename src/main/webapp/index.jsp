@@ -25,8 +25,8 @@ Session timeout: <%= session.getMaxInactiveInterval() %> <br>
 <h2>Server Information</h2>
 Server Info: <%=application.getServerInfo() %> <br>
 
-<a href="https://testdomainname.info"> link_test </a>
-<a href="https://testdomainnames2.com"> link_test_2 </a>
+<h3>Link1 : <a href="https://testdomainname.info"> Gitlab(testdomainame) </a> </h3><br>
+<h3>Link2 : <a href="https://testdomainnames2.com"> Jenkins(testdomainnames2) </a> </h3>
 
 
 </body>
