@@ -25,8 +25,8 @@ Session timeout: <%= session.getMaxInactiveInterval() %> <br>
 <h2>Server Information</h2>
 Server Info: <%=application.getServerInfo() %> <br>
 
-<a herf="https://testdomainname.info"> link_test </a>
-<a herf="https://testdomainnames2.com"> link_test_2 </a>
+<a href="https://testdomainname.info"> link_test </a>
+<a href="https://testdomainnames2.com"> link_test_2 </a>
 
 
 </body>
