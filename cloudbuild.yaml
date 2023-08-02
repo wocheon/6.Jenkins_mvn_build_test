@@ -1,0 +1,8 @@
+steps:
+  - id: 'build'
+    name: 'mvn_build'
+    entrypoint: 'bash'
+    args: 
+      - '-c'
+      - |
+          mvn clean package
