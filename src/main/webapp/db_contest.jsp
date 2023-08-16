@@ -77,13 +77,13 @@
 	<td><b>pw</b></td>
 	</tr>
 		
-	<tr>
+	
 	<%while(rs_3.next()){%>
+	<tr>
 		<td><%=rs_3.getString("id") %></td>
 		<td><%=rs_3.getString("pw") %></td>
-	<%}%>
 	</tr>
-				
+	<%}%>				
 	</table>
  
 </body>
