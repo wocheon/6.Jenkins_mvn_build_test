@@ -40,6 +40,7 @@ Server Info: <%=application.getServerInfo() %> <br>
 <h3>Link1 : <a href="https://testdomainname.info"> Gitlab(testdomainame) </a> </h3>
 <h3>Link2 : <a href="https://testdomainnames2.com"> Jenkins(testdomainnames2) </a> </h3>
 <h3>Link3 : <a href="db_contest.jsp"> DB Connection Test Page </a> </h3>
+<h3>Link4 : <a href="Pipelines.jsp"> Jenkins Pipeline Scripts </a> </h3>
 
 </body>
 </html>
