@@ -55,6 +55,8 @@
 
 
 <h2>[DB Info] </h2>
+<h3>DB IP : 192.168.1.200</h3>
+
 <%while(rs_0.next()){%>
 <h3>&nbsp;-Database Version : <%=rs_0.getString("version()") %></h3>
 <%}%>
