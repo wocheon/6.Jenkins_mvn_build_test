@@ -15,7 +15,7 @@
 			//		System.out.println("mariadb 사용가능");
 			//			
 			//				// mariaDB 연결
-			//					Connection conn = DriverManager.getConnection("jdbc:mariadb://127.0.0.1:3306/tomcat","root","welcome1");
+			//					Connection conn = DriverManager.getConnection("jdbc:mariadb://192.168.1.200:3306/tomcat","root","welcome1");
 			//						System.out.println(conn + "<-- conn");
 			//							
 			//								// 쿼리_0

@@ -1,9 +1,11 @@
 FROM openjdk:8-jdk
 
+ADD mariadb-java-client-2.7.9.jar /usr/local/openjdk-8/lib/
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 RUN mkdir -p "$CATALINA_HOME"
 WORKDIR ${CATALINA_HOME}
+ADD mariadb-java-client-2.7.9.jar /usr/local/tomcat/lib/
 
 RUN apt-get install -y wget
 
