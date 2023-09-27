@@ -9,7 +9,7 @@ ADD mariadb-java-client-2.7.9.jar /usr/local/tomcat/lib/
 
 RUN apt-get install -y wget
 
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.91/bin/apache-tomcat-8.5.93.tar.gz;
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz;
 RUN tar -xf apache-tomcat-8.5.93.tar.gz  --strip-components=1;
 
 RUN find . -name "*.bat" -exec rm -rf {} \;
