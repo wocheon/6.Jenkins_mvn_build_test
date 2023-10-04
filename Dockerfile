@@ -17,6 +17,7 @@ RUN rm -rf *tomcat*.tar.gz;
 RUN mv webapps webapps.org
 RUN mkdir webapps
 
-COPY ./target/test/index.jsp $CATALINA_HOME/webapps/ROOT/
+#COPY ./target/test/index.jsp $CATALINA_HOME/webapps/ROOT/
+COPY ./target/ROOT.war $CATALINA_HOME/webapps
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
