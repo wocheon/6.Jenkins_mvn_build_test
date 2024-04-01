@@ -6,9 +6,9 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 
 RUN mkdir -p "$CATALINA_HOME"
 
-ADD mariadb-java-client-2.7.9.jar /usr/local/openjdk-8/lib/
-ADD mariadb-java-client-2.7.9.jar /usr/local/tomcat/lib/
-COPY apache-tomcat-${TOMCAT_VERSION}.tar.gz ${CATALINA_HOME}
+ADD packages/mariadb-java-client-2.7.9.jar /usr/local/openjdk-8/lib/
+ADD packages/mariadb-java-client-2.7.9.jar /usr/local/tomcat/lib/
+COPY packages/apache-tomcat-${TOMCAT_VERSION}.tar.gz ${CATALINA_HOME}
 
 WORKDIR ${CATALINA_HOME}
 
