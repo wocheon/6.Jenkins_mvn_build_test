@@ -1,16 +1,21 @@
 FROM openjdk:8-jdk
 
-ADD mariadb-java-client-2.7.9.jar /usr/local/openjdk-8/lib/
+ENV TOMCAT_VERSION "8.5.99"
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
+
 RUN mkdir -p "$CATALINA_HOME"
-WORKDIR ${CATALINA_HOME}
+
+ADD mariadb-java-client-2.7.9.jar /usr/local/openjdk-8/lib/
 ADD mariadb-java-client-2.7.9.jar /usr/local/tomcat/lib/
+COPY apache-tomcat-${TOMCAT_VERSION}.tar.gz ${CATALINA_HOME}
+
+WORKDIR ${CATALINA_HOME}
 
 RUN apt-get install -y wget
 
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz;
-RUN tar -xf apache-tomcat-8.5.93.tar.gz  --strip-components=1;
+#RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz;
+RUN tar -xf "apache-tomcat-${TOMCAT_VERSION}.tar.gz"  --strip-components=1;
 
 RUN find . -name "*.bat" -exec rm -rf {} \;
 RUN rm -rf *tomcat*.tar.gz;
