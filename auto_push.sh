@@ -5,6 +5,7 @@ branch=$(git branch | gawk '{print $2}')
 remote=$1
 git add .
 
+
 if [ $? -eq 0 ]; then
 	echo -e "\E[42;37mADD : OK\E[0m"
 else 
